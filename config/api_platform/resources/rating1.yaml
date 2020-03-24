@@ -1,0 +1,33 @@
+App\Entity\Rating:
+    collectionOperations: []
+    itemOperations:
+        get: ~
+        get_rating:
+            method: POST
+            path: /ratings
+            controller: App\Controller\GetFeedbackRating
+            read: false
+            openapi_context:
+                summary: Retrieves Rating of Feedback.
+                parameters: []
+                requestBody:
+                    required: true
+                    content:
+                        application/ld+json:
+                            schema:
+                                type: object
+                                properties:
+                                    feedback:
+                                        type: string
+                                        required: true
+                                    classifier:
+                                        type: string
+                                    tokenizer:
+                                        type: string
+                            example:
+                                feedback: Feedback text
+                                classifier: NaiveBayes
+                                tokenizer: WordTokenizer
+    properties:
+        feedback:
+            identifier: true
