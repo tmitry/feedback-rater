@@ -4,6 +4,7 @@
     "keywords": ["feedback", "rating", "predict", "php-ml"],
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Timofei Dushkevich",
@@ -22,9 +23,6 @@
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "5.0.*",
         "symfony/yaml": "5.0.*"
-    },
-    "require-dev": {
-        "symfony/test-pack": "^1.0"
     },
     "config": {
         "preferred-install": {

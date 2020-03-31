@@ -20,13 +20,15 @@ Save your  dataset in `datasets/feedbacks.csv` (if you need).
 ### Console ###
 
 ``` bash
-> bin/console list
-> bin/console <command> --help
+$ bin/console list
+$ bin/console <command> --help
 ```
 
 Compare accuracy of different classifiers and tokenizers:
 ``` bash
 $ bin/console app:compare
+```
+```
  8/8 [============================] 100%
 +----------------+-------------------+------------------+
 | Tokenizer      | Classifier        | Accuracy         |
@@ -79,6 +81,8 @@ $ php -S 127.0.0.1:8000 -t public
 
 ``` bash
 $ curl -X POST "http://127.0.0.1:8000/api/ratings" -H "accept: application/ld+json" -H "Content-Type: application/ld+json" -d "{\"feedback\":\"Delivered as promised\\rSo far works great!\"}"
+```
+```
 {
   "@context": "/api/contexts/Rating",
   "@id": "/api/ratings/Delivered%2520as%2520promised%250DSo%2520far%2520works%2520great%2521",
