@@ -7,10 +7,8 @@ Prediction rating of feedback based on ML.
 
 ## 1. Installation ##
 
-Add the `tmitry/feedback-rater` package to your `require` section in the `composer.json` file.
-
 ``` bash
-$ composer require tmitry/feedback-rater
+$ composer install
 ```
 
 Save your  dataset in `datasets/feedbacks.csv` (if you need).
